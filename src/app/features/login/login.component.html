@@ -1,0 +1,29 @@
+<modal #modalRef >
+  <div class="mHeader">
+    <div class="header-black-bg-part"></div>
+    <div class="img-wrapper">
+      <img class="profile-img" src="assets/images/profilImg-150x150.jpg">
+    </div>
+    <div class="presentation-text">
+      <div class="full-name">Miguel KAKANAKOU</div>
+      <div class="position-title">Senior Software Engineer</div>
+    </div>
+  </div>
+  <div class="mBody">
+    <div class="short-description">
+      Log in to be able to add comments.
+    </div>
+    <div class="login-with-wrapper">
+      <button (click)="loginWithGoogle()" class="login-with google-bg-color">
+        <img class="login-with-icon white-bg-color" src="assets/images/google_logo_240.png" >
+        <span class="login-with-btn-text">Login with Google</span>
+      </button>
+    </div>
+    <div class="login-with-wrapper">
+      <button (click)="loginWithGithub()" class="login-with black-bg-color">
+        <img class="login-with-icon" src="assets/images/github_logo.png" >
+        <span class="login-with-btn-text">Login with Github</span>
+      </button>
+    </div>
+  </div>
+</modal>
