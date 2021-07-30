@@ -1,0 +1,371 @@
+
+.mask-image {
+  width: auto;
+  height: calc(100% + 150px);
+  top: -75px;
+  right: -75px;
+  position: absolute;
+}
+
+.get-in-touch-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 100%;
+  row-gap: 32px;
+
+  position: relative;
+  width: 88%;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(#E7816B, #E7816B),
+                    linear-gradient(#333136, #333136),
+                    conic-gradient(rgba(93, 2, 2, 0.0001), rgba(93, 2, 2, 0.4976)),
+                    linear-gradient(to right, #FFFFFF, #FFFFFF),
+                    linear-gradient(to right, rgba(93, 2, 2, 0.0001), rgba(93, 2, 2, 0.4976));
+
+  border-radius: 15px;
+  padding: 50px 20px 50px 20px;
+  z-index: 2;
+  margin-bottom: -175px;
+}
+
+.interested-in-project {
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
+
+.short-presentation-text {
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
+
+.get-in-touch-btn {
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1px;
+
+  color: #333136;
+  background-color: white;
+  border-style: none;
+  padding: 17px;
+  border-radius: 10px;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #FFAD9B;
+  color: white;
+}
+
+.get-in-touch-btn-wrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.external-link {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+}
+
+.external-link:hover {
+  opacity: 0.5;
+  filter: grayscale(20%);
+}
+
+.site-name {
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.4464285671710968px;
+  color: white;
+  text-align: center;
+}
+
+.site-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.menu-item {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-align: left;
+  color: white !important;
+  text-align: center;
+
+  margin-top: 25px;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.location-information {
+  margin-top: 32px;
+}
+
+.contact-information {
+  margin-top: 32px;
+}
+
+.external-links-wrapper {
+  margin-top: 32px;
+}
+
+.line-separator {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 32px;
+}
+
+.location-information {
+  text-align: center;
+}
+
+.contact-information {
+  text-align: center;
+}
+
+.external-links-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.menu-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.address-title {
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5035;
+}
+
+.address-info {
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5035;
+}
+
+.footer-wrapper {
+  padding: 225px 6% 50px 6%;
+  background-color: #1D1C1E;
+}
+
+/* Small devices: portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+  .get-in-touch-wrapper {
+    margin-bottom: -90px;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 50% 50%;
+
+    padding: 140px 6% 50px 6%;
+    background-color: #1D1C1E;
+  }
+
+  .site-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+
+  .line-separator {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .menu-wrapper {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  }
+
+  .location-information {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+
+  .contact-information {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  .external-links-wrapper {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+  }
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+  .interested-in-project {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .short-presentation-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .get-in-touch-wrapper {
+    width: 80%;
+  }
+
+  .get-in-touch-wrapper {
+    margin-bottom: -100px;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 50% 50%;
+
+    padding: 140px 5% 50px 5%;
+  }
+
+  .menu-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .menu-item {
+    margin-left: 15px;
+  }
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .get-in-touch-wrapper {
+    width: 74%;
+
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 50% 25%;
+    row-gap: 25px;
+    column-gap: 25%;
+
+    padding: 40px 50px 40px 50px;
+  }
+
+  .interested-in-project {
+    width: 350px;
+    text-align: left;
+
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .short-presentation-text {
+    width: 460px;
+    text-align: left;
+
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .get-in-touch-btn-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .site-name {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.3571428656578064px;
+  }
+
+  .footer-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 33% 33% 34%;
+    align-items: center;
+
+    padding: 140px 5% 50px 5%;
+  }
+
+  .site-name {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: left;
+  }
+
+  .line-separator {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    margin-top: 5px;
+  }
+
+  .menu-wrapper {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+  }
+
+  .menu-item {
+    margin-bottom: 20px;
+  }
+
+  .location-information {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    text-align: left;
+  }
+
+  .contact-information {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    text-align: left;
+  }
+
+  .external-links-wrapper {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    justify-self: end;
+    align-self: end;
+  }
+}

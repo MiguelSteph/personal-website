@@ -15,7 +15,6 @@ export class LoginComponent implements OnInit {
   constructor(private sharedEventService: SharedEventService,
               private authService: AuthService) {
     this.sharedEventService.onLogin.subscribe(() => {
-      console.log("Respond to the login event");
       this.open();
     });
   }

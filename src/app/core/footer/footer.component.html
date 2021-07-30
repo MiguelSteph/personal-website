@@ -1,0 +1,49 @@
+<div class="get-in-touch-wrapper">
+  <img class="mask-image" src="assets/images/bg-pattern-call-to-action.svg" />
+  <div class="interested-in-project">
+    Interested in doing a project together?
+  </div>
+  <div class="short-presentation-text">
+    I may not be available to work on your project
+    but I will recommend you the best
+    candidate that will help your business grow.
+  </div>
+  <div class="get-in-touch-btn-wrapper">
+    <button class="get-in-touch-btn">GET IN TOUCH</button>
+  </div>
+</div>
+<div class="footer-wrapper">
+  <div class="site-name">M. KAKANAKOU</div>
+  <div class="line-separator"></div>
+  <ul class="menu-wrapper">
+    <li class="menu-item">{{homeMenu.name}}</li>
+    <li class="menu-item">{{blogMenu.name}}</li>
+    <li class="menu-item">{{portfolioMenu.name}}</li>
+    <li class="menu-item">{{aboutMeMenu.name}}</li>
+    <li class="menu-item">{{contactMenu.name}}</li>
+  </ul>
+  <address class="location-information">
+    <span class="address-title">Current Address</span><br />
+    <span class="address-info">{{personalProfile.street}}, {{personalProfile.city}}</span><br />
+    <span class="address-info">{{personalProfile.department}}, {{personalProfile.country}}</span>
+  </address>
+  <address class="contact-information">
+    <span class="address-title">Contact Miguel</span><br />
+    <span class="address-info">Tel: {{personalProfile.telephone}}</span><br />
+    <span class="address-info">M: <a class="address-info" href="mailto:{{personalProfile.email}}">{{personalProfile.email}}</a></span>
+  </address>
+  <div class="external-links-wrapper">
+    <a href="{{personalProfile.linkedin}}" target="_blank">
+      <img class="external-link" src="assets/images/linkedin-icon-svg.svg" />
+    </a>
+    <a href="{{personalProfile.github}}" target="_blank">
+      <img class="external-link" src="assets/images/github-icon.svg" />
+    </a>
+    <a href="{{personalProfile.leetcode}}" target="_blank">
+      <img class="external-link" src="assets/images/LeetCode_logo.svg" />
+    </a>
+    <a href="{{personalProfile.hackerrank}}" target="_blank">
+      <img class="external-link" src="assets/images/hackerrank-logo.svg" />
+    </a>
+  </div>
+</div>
