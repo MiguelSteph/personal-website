@@ -22,10 +22,10 @@ export class Menus {
     link: "/about-me"
   };
 
-  public static contactMenu: Menu = {
-    name: "Contact",
-    link: "/contact"
-  };
+  // public static contactMenu: Menu = {
+  //   name: "Contact",
+  //   link: "/contact"
+  // };
 
   public static logInMenu: Menu = {
     name: "Log In",

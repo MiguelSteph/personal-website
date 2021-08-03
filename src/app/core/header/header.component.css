@@ -40,7 +40,10 @@ nav {
 }
 
 .menu-item-typo:hover {
- color: #5FB4A2 !important;
+ /*color: #5FB4A2 !important;*/
+ /*color: #E7816B !important;*/
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .profile-picture {
@@ -54,6 +57,10 @@ nav {
 .logged-user-text {
   display: inline-flex;
   align-items: center;
+}
+
+.active {
+  color: #FFAD9B !important;
 }
 
 /* Responsive Styles */

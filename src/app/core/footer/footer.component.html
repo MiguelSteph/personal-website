@@ -13,14 +13,21 @@
   </div>
 </div>
 <div class="footer-wrapper">
-  <div class="site-name">M. KAKANAKOU</div>
+  <div class="site-name"><a routerLink="{{homeMenu.link}}">M. KAKANAKOU</a></div>
   <div class="line-separator"></div>
   <ul class="menu-wrapper">
-    <li class="menu-item">{{homeMenu.name}}</li>
-    <li class="menu-item">{{blogMenu.name}}</li>
-    <li class="menu-item">{{portfolioMenu.name}}</li>
-    <li class="menu-item">{{aboutMeMenu.name}}</li>
-    <li class="menu-item">{{contactMenu.name}}</li>
+    <li class="menu-item">
+      <a routerLink="{{homeMenu.link}}" routerLinkActive="active">{{homeMenu.name}}</a>
+    </li>
+    <li class="menu-item">
+      <a routerLink="{{blogMenu.link}}" routerLinkActive="active">{{blogMenu.name}}</a>
+    </li>
+    <li class="menu-item">
+      <a routerLink="{{portfolioMenu.link}}" routerLinkActive="active">{{portfolioMenu.name}}</a>
+    </li>
+    <li class="menu-item">
+      <a routerLink="{{aboutMeMenu.link}}" routerLinkActive="active">{{aboutMeMenu.name}}</a>
+    </li>
   </ul>
   <address class="location-information">
     <span class="address-title">Current Address</span><br />

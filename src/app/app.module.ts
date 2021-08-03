@@ -12,6 +12,11 @@ import {environment} from "../environments/environment";
 import {AngularFireDatabaseModule} from "@angular/fire/database";
 import {AngularFireAuthModule} from "@angular/fire/auth";
 import { FooterComponent } from './core/footer/footer.component';
+import { BlogsComponent } from './features/blogs/blogs.component';
+import { HomeComponent } from './features/home/home.component';
+import { PortfoliosComponent } from './features/portfolios/portfolios.component';
+import { AboutMeComponent } from './features/about-me/about-me.component';
+import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { FooterComponent } from './core/footer/footer.component';
     HeaderComponent,
     ModalComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    BlogsComponent,
+    HomeComponent,
+    PortfoliosComponent,
+    AboutMeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

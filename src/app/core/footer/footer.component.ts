@@ -38,10 +38,6 @@ export class FooterComponent implements OnInit {
     return Menus.aboutMeMenu;
   }
 
-  get contactMenu() : Menu {
-    return Menus.contactMenu;
-  }
-
   get logInMenu() : Menu {
     return Menus.logInMenu;
   }

@@ -193,6 +193,15 @@
   background-color: #1D1C1E;
 }
 
+.menu-item > a, .site-name > a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.active {
+  color: #FFAD9B !important;
+}
+
 /* Small devices: portrait tablets and large phones */
 @media only screen and (min-width: 600px) {
   .get-in-touch-wrapper {
