@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {BlogPreviewInfo} from "../../shared/models/blog-preview-info";
+import {BlogService} from "../../core/services/blog.service";
 
 @Component({
   selector: 'app-blogs',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogsComponent implements OnInit {
 
-  constructor() { }
+  blogPreviewList: BlogPreviewInfo[];
+
+  constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
+    this.blogService.fetchBlogsPreviewInfo()
+      .subscribe(blogsPreview => this.blogPreviewList = blogsPreview);
   }
 
 }

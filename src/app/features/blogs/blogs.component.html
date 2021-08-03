@@ -1,1 +1,8 @@
-<p>blogs works!</p>
+<div class="container">
+  <div class="blogs-wrapper">
+    <blog-preview-component
+      *ngFor="let blog of blogPreviewList"
+      [blog-post-preview]="blog">
+    </blog-preview-component>
+  </div>
+</div>

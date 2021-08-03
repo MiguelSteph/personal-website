@@ -1,0 +1,26 @@
+.blogs-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Small devices: portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .blogs-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3rem;
+    column-gap: 4%;
+  }
+}

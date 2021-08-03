@@ -1,0 +1,16 @@
+<div class="blog-preview-wrapper">
+  <img class="blog-preview-img" [src]="blogPreview.previewImg | getDownloadURL" alt="Blog preview image" />
+  <div class="blog-preview-info-wrapper">
+    <div class="blog-title">{{blogPreview.title}}</div>
+    <div class="blog-preview-text" [innerHTML]="blogPreview.previewText"></div>
+    <div class="blog-preview-footer-wrapper">
+      <div class="category-and-date-posted">
+        <div class="reading-time">{{blogPreview.readTimeInMinutes}} minutes read</div>
+        <div class="date-posted">{{getFormattedDate()}}</div>
+      </div>
+      <div class="category-wrapper">
+        <div class="category">{{blogPreview.category}}</div>
+      </div>
+    </div>
+  </div>
+</div>

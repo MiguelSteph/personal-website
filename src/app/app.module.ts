@@ -17,6 +17,8 @@ import { HomeComponent } from './features/home/home.component';
 import { PortfoliosComponent } from './features/portfolios/portfolios.component';
 import { AboutMeComponent } from './features/about-me/about-me.component';
 import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
+import {AngularFireStorageModule} from "@angular/fire/storage";
+import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-component/blog-preview-component.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { PageNotFoundComponent } from './features/page-not-found/page-not-found.
     HomeComponent,
     PortfoliosComponent,
     AboutMeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BlogPreviewComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { PageNotFoundComponent } from './features/page-not-found/page-not-found.
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
