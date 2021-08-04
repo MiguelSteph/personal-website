@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 100%;
   row-gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* Small devices: portrait tablets and large phones */

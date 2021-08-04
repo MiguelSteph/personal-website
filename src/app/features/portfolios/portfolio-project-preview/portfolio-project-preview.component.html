@@ -1,0 +1,20 @@
+<div class="portfolio-preview-wrapper"
+  [ngClass]="{'preview-wrapper-first': isFirst, 'preview-wrapper-second': !isFirst}">
+  <img class="portfolio-img"
+       [ngClass]="{'portfolio-img-position-first': isFirst, 'portfolio-img-position-second': !isFirst}"
+       [src]="portfolioPreviewInfo.mainImg | getDownloadURL" />
+  <div class="project-info-wrapper"
+    [ngClass]="{'project-info-wrapper-position-first': isFirst, 'project-info-wrapper-position-second': !isFirst}">
+    <div class="project-title">{{portfolioPreviewInfo.projectName}}</div>
+    <div class="project-preview-text" [innerHTML]="portfolioPreviewInfo.previewText"></div>
+    <div class="project-code-wrapper">
+      <a class="project-code-link" target="_blank" href="{{portfolioPreviewInfo.code}}">
+        {{portfolioPreviewInfo.code}}
+      </a>
+    </div>
+    <div class="project-view-btn-wrapper">
+      <button class="project-view-btn">VIEW PROJECT</button>
+      <button class="project-view-demo-btn">LIVE DEMO</button>
+    </div>
+  </div>
+</div>

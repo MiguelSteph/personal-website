@@ -1,0 +1,201 @@
+
+.portfolio-preview-wrapper {
+  height: auto;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.project-preview-text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.project-view-btn {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: rgba(51, 50, 61, 1);
+
+  padding: 0.7rem;
+
+  border-color: rgba(51, 50, 61, 1);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.project-view-demo-btn {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+
+  padding: 0.7rem;
+
+  /*border-style: none;*/
+  border-radius: 10px;
+  border-color: rgba(51, 50, 61, 1);
+
+  background-color: #203A4C;
+}
+
+.project-view-btn:hover, .project-view-demo-btn:hover {
+  background-color: #FFAD9B;
+  color: white;
+  border-color: #FFAD9B;
+}
+
+.project-info-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, auto) 1fr;
+  row-gap: 24px;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(51, 50, 61, 0.50);
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.project-view-btn-wrapper {
+  height: fit-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-self: end;
+}
+
+.project-code-wrapper {
+  font-family: Public Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(95, 180, 162, 1);
+}
+
+.project-code-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.project-code-link:hover {
+  color: #FFAD9B;
+  text-decoration: underline;
+}
+
+/* Small devices: portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+  .portfolio-preview-wrapper {
+    min-height: 400px;
+    display: grid;
+
+    column-gap: 5%;
+  }
+
+  .preview-wrapper-first {
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 100%;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .preview-wrapper-second {
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: 100%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .project-info-wrapper-position-first {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .project-info-wrapper-position-second {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .portfolio-img-position-first {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .portfolio-img-position-second {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .project-info-wrapper {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgba(51, 50, 61, 0.50);
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    row-gap: 29px;
+  }
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .portfolio-preview-wrapper {
+    min-height: 400px;
+    /*height: 450px;*/
+    /*max-width: 1000px;*/
+  }
+
+  .project-preview-text {
+    font-size: 16px;
+  }
+
+  .preview-wrapper-first {
+    grid-template-columns: 48.75% 38.25%;
+    grid-template-rows: 100%;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
+  .preview-wrapper-second {
+    grid-template-columns: 38.25% 48.75%;
+    grid-template-rows: 100%;
+    margin-left: 8%;
+    margin-right: 0;
+  }
+}

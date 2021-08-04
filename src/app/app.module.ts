@@ -19,6 +19,8 @@ import { AboutMeComponent } from './features/about-me/about-me.component';
 import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
 import {AngularFireStorageModule} from "@angular/fire/storage";
 import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-component/blog-preview-component.component';
+import { PortfolioProjectPreviewComponent } from './features/portfolios/portfolio-project-preview/portfolio-project-preview.component';
+import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-project-view/portfolio-project-view.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-com
     PortfoliosComponent,
     AboutMeComponent,
     PageNotFoundComponent,
-    BlogPreviewComponentComponent
+    BlogPreviewComponentComponent,
+    PortfolioProjectPreviewComponent,
+    PortfolioProjectViewComponent
   ],
   imports: [
     BrowserModule,

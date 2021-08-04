@@ -1,1 +1,6 @@
-<p>portfolios works!</p>
+<div class="portfolio-wrapper container">
+  <portfolio-project-preview *ngFor="let portfolio of portfoliosPreviewList; index as i;"
+    [portfolio-preview-info]="portfolio"
+    [is-first]="i%2 == 0">
+  </portfolio-project-preview>
+</div>
