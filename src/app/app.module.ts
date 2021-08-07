@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ModalComponent } from './shared/components/modal/modal.component';
 import { LoginComponent } from './features/login/login.component';
 import {AngularFireModule} from "@angular/fire";
@@ -21,6 +21,7 @@ import {AngularFireStorageModule} from "@angular/fire/storage";
 import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-component/blog-preview-component.component';
 import { PortfolioProjectPreviewComponent } from './features/portfolios/portfolio-project-preview/portfolio-project-preview.component';
 import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-project-view/portfolio-project-view.component';
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -44,8 +45,7 @@ import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-p
     NgbModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

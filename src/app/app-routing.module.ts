@@ -6,6 +6,8 @@ import {HomeComponent} from "./features/home/home.component";
 import {PortfoliosComponent} from "./features/portfolios/portfolios.component";
 import {AboutMeComponent} from "./features/about-me/about-me.component";
 import {PageNotFoundComponent} from "./features/page-not-found/page-not-found.component";
+import {PortfolioProjectViewComponent} from "./features/portfolios/portfolio-project-view/portfolio-project-view.component";
+import {PortfolioProjectResolver} from "./core/resolvers/portfolio-project.resolver";
 
 const routes: Routes = [
   {
@@ -19,6 +21,13 @@ const routes: Routes = [
   {
     path: Menus.portfolioMenu.link.substring(1),
     component: PortfoliosComponent
+  },
+  {
+    path: Menus.portfolioMenu.link.substring(1) + "/:project-name",
+    component: PortfolioProjectViewComponent,
+    resolve: {
+      project: PortfolioProjectResolver
+    }
   },
   {
     path: Menus.aboutMeMenu.link.substring(1),

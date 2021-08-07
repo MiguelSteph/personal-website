@@ -1,1 +1,164 @@
-<p>portfolio-project-view works!</p>
+<div class="project-view-wrapper">
+  <div class="project-main-img-wrapper">
+    <img class="project-main-img"
+         [src]="getProjectMedia('mainImg')"
+         alt="Project main preview image" />
+  </div>
+
+  <div class="project-intro-and-demo">
+    <div class="project-intro-wrapper">
+      <div class="project-title">{{portfolioProject.projectName}}</div>
+      <div class="project-code-link">
+        <a [href]="portfolioProject.code">
+          {{portfolioProject.code}}
+        </a>
+      </div>
+      <div class="project-intro-text project-std-text"
+           [innerHTML]="portfolioProject.introduction">
+      </div>
+    </div>
+
+    <div class="project-demo-wrapper">
+      <div class="project-subtitle">Project Demo</div>
+      <video id="projectDemo" class="project-demo-video" controls muted
+             [src]="getProjectMedia('demoVideo')">
+      </video>
+    </div>
+  </div>
+
+  <div class="project-purpose-and-goal-wrapper">
+    <div class="project-subtitle">Project Purpose and Goal</div>
+    <div class="project-std-text project-purpose-and-goal"
+         [innerHTML]="portfolioProject.purposeAndGoal">
+    </div>
+  </div>
+
+  <div class="project-stack-wrapper">
+    <div class="project-subtitle project-stack-title">Stack and Explanation</div>
+    <div class="project-stack-table">
+      <table class="table table-dark stack-table">
+        <tbody>
+          <tr *ngFor="let stackItem of getProjectStacks()" >
+            <td>
+              <div class="stack-category">{{stackItem.category}}: </div>
+            </td>
+            <td>
+              <div class="stack-list-wrapper">
+                <div *ngFor="let stackName of getStackItems(stackItem.namesList)"
+                     class="stack-item">{{stackName}}</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="project-std-text stack-explanation"
+         [innerHTML]="portfolioProject.stackAndExplanation">
+    </div>
+  </div>
+
+  <div class="project-problem-wrapper">
+    <div class="project-subtitle project-problem-title">Problems and Thought Process</div>
+
+    <div class="project-first-problem-wrapper">
+      <div class="problem-title">
+        {{portfolioProject.problemsAndThoughProcess[1].problemName}}
+      </div>
+      <div class="problem-description">
+        <div class="title-inline-display problem-description-title">
+          <div class="problem-step-num">1</div>
+          <div class="problem-step-text">Description</div>
+        </div>
+        <div class="project-std-text problem-description-content"
+             [innerHTML]="portfolioProject.problemsAndThoughProcess[1].problemDescription">
+        </div>
+      </div>
+      <div class="problem-solution">
+        <div class="title-inline-display problem-solution-title">
+          <div class="problem-step-num">2</div>
+          <div class="problem-step-text">Thought Process</div>
+        </div>
+        <div class="project-std-text problem-solution-content"
+             [innerHTML]="portfolioProject.problemsAndThoughProcess[1].problemSolution">
+        </div>
+      </div>
+    </div>
+
+    <div class="project-second-problem-wrapper">
+      <div class="problem-title">
+        {{portfolioProject.problemsAndThoughProcess[2].problemName}}
+      </div>
+      <div class="problem-description">
+        <div class="title-inline-display problem-description-title">
+          <div class="problem-step-num">1</div>
+          <div class="problem-step-text">Description</div>
+        </div>
+        <div class="project-std-text problem-description-content"
+             [innerHTML]="portfolioProject.problemsAndThoughProcess[2].problemDescription">
+        </div>
+      </div>
+      <div class="problem-solution">
+        <div class="title-inline-display problem-solution-title">
+          <div class="problem-step-num">2</div>
+          <div class="problem-step-text">Thought Process</div>
+        </div>
+        <div class="project-std-text problem-solution-content"
+             [innerHTML]="portfolioProject.problemsAndThoughProcess[2].problemSolution">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-features-wrapper" *ngIf="portfolioProject.usersAndFeatures">
+    <div class="project-subtitle project-users-and-features-title">User types and Features</div>
+
+    <div *ngFor="let userTypeFeatures of getUserTypeAndFeatures()"
+         class="project-user-feature-wrapper">
+      <div class="problem-title project-usertype">{{userTypeFeatures.usertype}}</div>
+      <div class="project-std-text project-features-list"
+           [innerHTML]="userTypeFeatures.presentationText">
+      </div>
+      <div class="project-features-demo">
+        <video class="demo-video" controls muted>
+          <source src="{{userTypeFeatures.videoDemo}}" type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="project-static-preview-wrapper">
+    <div class="project-subtitle project-static-preview">Static Previews</div>
+
+    <div id="carouselExampleIndicators" class="static-preview carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button *ngFor="let preview of getStaticPreviewsImg(); index as i"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                [attr.data-bs-slide-to]="i"
+                [ngClass]="{'active': i==0}"
+                aria-current="true"
+                [attr.aria-label]="'Slide' + i">
+        </button>
+      </div>
+      <div class="carousel-inner">
+        <div *ngFor="let preview of getStaticPreviewsImg(); index as i"
+             [ngClass]="{'active': i==0}"
+             class="carousel-item">
+          <img [src]="preview"
+               class="carrousel-img d-block"
+               alt="Static Preview">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>

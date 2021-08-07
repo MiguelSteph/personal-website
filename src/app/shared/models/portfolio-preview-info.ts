@@ -1,4 +1,5 @@
 export interface PortfolioPreviewInfo {
+  projectKey: string;
   projectName: string;
   previewText: string;
   code: string;

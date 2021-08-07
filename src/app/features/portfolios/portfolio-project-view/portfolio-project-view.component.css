@@ -1,0 +1,471 @@
+
+.project-main-img {
+  width: 100%;
+  max-height: 150px;
+}
+
+.project-intro-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1.5rem;
+}
+
+.project-title {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.project-code-link {
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(95, 180, 162, 1);
+}
+
+.project-code-link a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.project-code-link a:hover {
+  color: #FFAD9B;
+  text-decoration: underline;
+}
+
+.project-std-text {
+  font-family: Public Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.project-subtitle {
+  font-family: "Ibarra Real Nova";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.2857142984867096px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+
+  margin-bottom: 1.5rem;
+}
+
+.project-main-img-wrapper {
+  margin-bottom: 3rem;
+}
+
+.project-intro-and-demo {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 100%;
+  row-gap: 2.5rem;
+}
+
+.project-demo-video {
+  width: 100%;
+  max-height: 200px;
+}
+
+.project-purpose-and-goal-wrapper {
+  margin-top: 2.5rem;
+}
+
+.project-features-wrapper {
+  margin-top: 2.5rem;
+}
+
+.stack-category {
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: rgba(231, 129, 107, 1);
+}
+
+.stack-list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.stack-item {
+  margin: 5px;
+  padding: 0.5rem;
+  background-color: white;
+  color: rgba(51, 50, 61, 1);
+  border-radius: 10px;
+}
+
+.project-stack-wrapper {
+  margin-top: 2.5rem;
+
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 1rem;
+}
+
+.project-problem-wrapper {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 1.5rem;
+}
+
+.project-first-problem-wrapper {
+  padding-left: 0.8rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 100%;
+  row-gap: 1.5rem;
+}
+
+.project-second-problem-wrapper {
+  padding-left: 0.8rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 100%;
+  row-gap: 1.5rem;
+}
+
+.project-problem-title {
+  margin-bottom: 0 !important;
+}
+
+.problem-title {
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.problem-description {
+  padding-left: 0.8rem;
+}
+
+.problem-solution {
+  padding-left: 0.8rem;
+}
+
+.problem-description-title {
+  margin-bottom: 1rem;
+}
+
+.problem-solution-title {
+  margin-bottom: 1rem;
+}
+
+.problem-step-num {
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+
+  width: 32px;
+  height: 32px;
+  border-style: none;
+  border-radius: 10px 0 ;
+  background-color: #E7816B;
+}
+
+.problem-step-text {
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #E7816B;
+
+  border-style: solid;
+  border-color: #FFAD9B;
+  border-width: 1px;
+  border-left-style: none;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.title-inline-display {
+  width: fit-content;
+  display: inline-flex;
+  flex-flow: row;
+}
+
+.problem-description-content {
+  padding-left: 0.8rem;
+}
+
+.problem-solution-content {
+  padding-left: 0.8rem;
+}
+
+.project-user-feature-wrapper {
+  padding-left: 0.8rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-features-list {
+  padding-left: 0.8rem;
+}
+
+.demo-video {
+  width: 100%;
+  max-height: 400px;
+}
+
+.project-static-preview-wrapper {
+  margin-top: 2.5rem;
+}
+
+.project-static-preview {
+  margin-bottom: 2.5rem;
+}
+
+.static-preview {
+  width: 100%;
+  max-height: 400px;
+}
+
+.carrousel-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 350px;
+}
+
+.carousel-indicators {
+  /*background-color: #0E8784;*/
+  background-color: #FFAD9B;
+}
+
+/* Small devices: portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+
+  .carrousel-img {
+    max-height: 400px;
+  }
+
+  .project-main-img {
+    max-height: 320px;
+  }
+
+  .project-intro-wrapper {
+    grid-template-columns: 40% 55%;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 5%;
+  }
+
+  .project-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .project-code-link {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .project-intro-text {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .project-demo-video {
+    max-height: 400px;
+  }
+
+  .project-purpose-and-goal {
+    width: 60%;
+  }
+
+  .stack-table {
+    width: fit-content;
+  }
+
+  .project-stack-wrapper {
+    margin-top: 5rem;
+    grid-template-columns: 45% 50%;
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 5%;
+    row-gap: unset;
+  }
+
+  .project-stack-title {
+    height: fit-content;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .project-stack-table {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .stack-explanation {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    max-width: 500px;
+  }
+
+  .project-main-img-wrapper {
+    margin-bottom: 5rem;
+  }
+
+  .project-purpose-and-goal-wrapper {
+    margin-top: 5rem;
+  }
+
+  .project-problem-wrapper {
+    margin-top: 5rem;
+    grid-template-columns: 47.5% 47.5%;
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 5%;
+  }
+
+  .project-problem-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+
+  .project-first-problem-wrapper {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .project-second-problem-wrapper {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .project-features-wrapper {
+    margin-top: 5rem;
+  }
+
+  .project-user-feature-wrapper {
+    padding-left: 0.8rem;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: repeat(2, min-content);
+    column-gap: 5%;
+    margin-bottom: 4rem;
+  }
+
+  .project-usertype {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+  }
+
+  .project-features-list {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .project-features-demo {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  .demo-video {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  .static-preview {
+    width: 90%;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+
+  .project-main-img {
+    max-height: 500px;
+  }
+
+  .project-intro-and-demo {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+  }
+
+  .project-intro-wrapper {
+    padding-top: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: unset;
+  }
+
+  .project-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .project-code-link {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .project-intro-text {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .project-demo-video {
+    max-height: 400px;
+  }
+
+  .carrousel-img {
+    max-height: 500px;
+  }
+
+  .static-preview {
+    max-height: 700px;
+  }
+
+}

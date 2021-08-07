@@ -11,3 +11,13 @@ html {
 body {
   background-color: #F2F2F2;
 }
+
+ol {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 0.8rem;
+}
+
+strong {
+  font-weight: 700 !important;
+}
