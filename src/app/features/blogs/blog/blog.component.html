@@ -1,0 +1,21 @@
+<div class="blog-wrapper">
+  <div class="blog-title">{{blogInfo.title}}</div>
+  <div class="blog-date-publication-wrapper">
+    <div class="category-and-date-posted">
+      <div class="date-posted">Posted on {{getFormattedDate()}}</div>
+      <div class="reading-time">{{blogInfo.readTimeInMinutes}} minutes read</div>
+    </div>
+
+    <div class="category-wrapper">
+      <div class="category">{{blogInfo.category}}</div>
+    </div>
+  </div>
+  <div class="blog-img">
+    <img class="blog-main-img" [src]="blogInfo.mainImg" alt="Blog main image" />
+  </div>
+  <div class="blog-content" [innerHTML]="blogInfo.content"></div>
+  <div class="blog-keywords-wrapper">
+    <span class="keyword">Keywords: </span>
+    <span *ngFor="let kw of getKeywords()" class="keyword-item">{{kw}}</span>
+  </div>
+</div>

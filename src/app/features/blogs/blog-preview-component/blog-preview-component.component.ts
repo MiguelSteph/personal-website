@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {BlogPreviewInfo} from "../../../shared/models/blog-preview-info";
+import {Menus} from "../../../shared/classes/menus";
 
 const MONTH_SHORT_NAME = ["Jan", "Feb", "Mar",
                           "Apr", "May", "Jun",
@@ -28,4 +29,7 @@ export class BlogPreviewComponentComponent implements OnInit {
     return day + " " + month + " " + year;
   }
 
+  getBlogMenu() {
+    return Menus.blogMenu.link;
+  }
 }

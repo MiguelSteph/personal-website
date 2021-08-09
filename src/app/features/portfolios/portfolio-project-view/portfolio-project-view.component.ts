@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {PortfolioService} from "../../../core/services/portfolio.service";
 import {ActivatedRoute} from "@angular/router";
 import {
   FeaturesForUsertype,
   PortfolioProject,
-  ProjectStack,
-  ProjectUserTypesAndFeatures
 } from "../../../shared/models/portfolio-project";
 
 @Component({

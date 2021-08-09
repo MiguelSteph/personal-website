@@ -6,5 +6,7 @@ export interface BlogPreviewInfo {
   previewText: string,
   previewImg: string,
   keywords: string,
-  readTimeInMinutes: number
+  readTimeInMinutes: number,
+  mainImg: string,
+  content: string
 }

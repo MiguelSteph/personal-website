@@ -27,4 +27,3 @@ export class PortfolioProjectPreviewComponent {
     this.router.navigate([this.getPortfolioMenuLink(), this.portfolioPreviewInfo.projectKey], {fragment: 'projectDemo'});
   }
 }
-// projectDemoSection

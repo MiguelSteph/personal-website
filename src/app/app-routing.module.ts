@@ -8,6 +8,8 @@ import {AboutMeComponent} from "./features/about-me/about-me.component";
 import {PageNotFoundComponent} from "./features/page-not-found/page-not-found.component";
 import {PortfolioProjectViewComponent} from "./features/portfolios/portfolio-project-view/portfolio-project-view.component";
 import {PortfolioProjectResolver} from "./core/resolvers/portfolio-project.resolver";
+import {BlogComponent} from "./features/blogs/blog/blog.component";
+import {BlogResolver} from "./core/resolvers/blog.resolver";
 
 const routes: Routes = [
   {
@@ -17,6 +19,13 @@ const routes: Routes = [
   {
     path: Menus.blogMenu.link.substring(1),
     component: BlogsComponent
+  },
+  {
+    path: Menus.blogMenu.link.substring(1) + "/:blog-name",
+    component: BlogComponent,
+    resolve: {
+      blog: BlogResolver
+    }
   },
   {
     path: Menus.portfolioMenu.link.substring(1),

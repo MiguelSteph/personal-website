@@ -22,6 +22,7 @@ import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-com
 import { PortfolioProjectPreviewComponent } from './features/portfolios/portfolio-project-preview/portfolio-project-preview.component';
 import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-project-view/portfolio-project-view.component';
 import {CommonModule} from "@angular/common";
+import { BlogComponent } from './features/blogs/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {CommonModule} from "@angular/common";
     PageNotFoundComponent,
     BlogPreviewComponentComponent,
     PortfolioProjectPreviewComponent,
-    PortfolioProjectViewComponent
+    PortfolioProjectViewComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

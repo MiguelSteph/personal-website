@@ -1,7 +1,11 @@
 <div class="blog-preview-wrapper">
-  <img class="blog-preview-img" [src]="blogPreview.previewImg" alt="Blog preview image" />
+  <a [routerLink]="[getBlogMenu(), blogPreview.key]">
+    <img class="blog-preview-img" [src]="blogPreview.previewImg" alt="Blog preview image" />
+  </a>
   <div class="blog-preview-info-wrapper">
-    <div class="blog-title">{{blogPreview.title}}</div>
+    <div class="blog-title">
+      <a class="blog-link" [routerLink]="[getBlogMenu(), blogPreview.key]">{{blogPreview.title}}</a>
+    </div>
     <div class="blog-preview-text" [innerHTML]="blogPreview.previewText"></div>
     <div class="blog-preview-footer-wrapper">
       <div class="category-and-date-posted">
