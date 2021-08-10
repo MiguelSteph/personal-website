@@ -1,0 +1,207 @@
+.home-header-img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 10px;
+}
+
+.home-presentation {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+
+  background-color: white;
+
+  padding: 1.5rem;
+}
+
+.about-me-wrapper {
+  width: 100%;
+  clear: both;
+  margin-top: 2rem;
+}
+
+.my-picture {
+  float: left;
+  width: 100%;
+}
+
+.author-picture {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.presentation-header {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.about-me-text {
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+p {
+  margin-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.home-presentation > span {
+  color: #5FB4A2;
+}
+
+.presentation-wrapper {
+  padding: 0.5rem;
+}
+
+.skills-wrapper {
+  margin-top: 2rem;
+  clear: both;
+}
+
+.skill-category {
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 3px;
+  color: rgba(231, 129, 107, 1);
+}
+
+.skill-list-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.skill-item {
+  margin: 5px;
+  padding: 0.5rem;
+  background-color: white;
+  color: rgba(51, 50, 61, 1);
+  border-radius: 10px;
+}
+
+.skill-table {
+  margin-top: 2rem;
+}
+
+table {
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+
+.round-top-left {
+  border-radius: 20px 0 0 0;
+}
+
+.round-top-right {
+  border-radius: 0 20px 0 0;
+}
+
+.round-bottom-left {
+  border-radius: 0 0 0 20px;
+}
+
+.round-bottom-right {
+  border-radius: 0 0 20px 0;
+}
+
+a {
+  color: rgba(231, 129, 107, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFAD9B;
+  text-decoration: underline;
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+  .home-header-img {
+    width: 100%;
+    max-height: 500px;
+  }
+
+  .home-header-wrapper {
+    position: relative;
+  }
+
+  .home-presentation {
+    max-width: 600px;
+
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+
+    position: absolute;
+    bottom: -7rem;
+    left: 2rem;
+    border-radius: 10px;
+  }
+
+  .author-picture {
+    width: 94%;
+  }
+
+  .my-picture {
+    float: left;
+    width: 46%;
+  }
+
+  .about-me-wrapper {
+    margin-top: 11rem;
+  }
+
+  .presentation-wrapper {
+    padding-right: 2rem;
+    padding-top: 1rem;
+  }
+
+  .skills-wrapper {
+    margin-top: 3rem;
+  }
+
+  .skill-table {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .home-header-img {
+    width: 100%;
+    /*max-height: 500px;*/
+  }
+
+  .home-presentation {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.4464285671710968px;
+    color: rgba(51, 50, 61, 1);
+  }
+}

@@ -15,14 +15,12 @@ import { FooterComponent } from './core/footer/footer.component';
 import { BlogsComponent } from './features/blogs/blogs.component';
 import { HomeComponent } from './features/home/home.component';
 import { PortfoliosComponent } from './features/portfolios/portfolios.component';
-import { AboutMeComponent } from './features/about-me/about-me.component';
 import { PageNotFoundComponent } from './features/page-not-found/page-not-found.component';
-import {AngularFireStorageModule} from "@angular/fire/storage";
 import { BlogPreviewComponentComponent } from './features/blogs/blog-preview-component/blog-preview-component.component';
 import { PortfolioProjectPreviewComponent } from './features/portfolios/portfolio-project-preview/portfolio-project-preview.component';
 import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-project-view/portfolio-project-view.component';
-import {CommonModule} from "@angular/common";
 import { BlogComponent } from './features/blogs/blog/blog.component';
+import { ContactMeComponent } from './features/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +32,12 @@ import { BlogComponent } from './features/blogs/blog/blog.component';
     BlogsComponent,
     HomeComponent,
     PortfoliosComponent,
-    AboutMeComponent,
     PageNotFoundComponent,
     BlogPreviewComponentComponent,
     PortfolioProjectPreviewComponent,
     PortfolioProjectViewComponent,
-    BlogComponent
+    BlogComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

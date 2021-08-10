@@ -3,7 +3,7 @@ import {Menu} from "../models/menu";
 export class Menus {
 
   public static homeMenu: Menu = {
-    name: "What's New",
+    name: "Home",
     link: "/home"
   };
 
@@ -17,15 +17,15 @@ export class Menus {
     link: "/portfolio"
   };
 
-  public static aboutMeMenu: Menu = {
-    name: "About Miguel",
-    link: "/about-me"
-  };
-
-  // public static contactMenu: Menu = {
-  //   name: "Contact",
-  //   link: "/contact"
+  // public static aboutMeMenu: Menu = {
+  //   name: "About Miguel",
+  //   link: "/about-me"
   // };
+
+  public static contactMeMenu: Menu = {
+    name: "Contact Me",
+    link: "/contact"
+  };
 
   public static logInMenu: Menu = {
     name: "Log In",

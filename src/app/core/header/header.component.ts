@@ -29,8 +29,8 @@ export class HeaderComponent implements OnInit {
     return Menus.portfolioMenu;
   }
 
-  get aboutMeMenu() : Menu {
-    return Menus.aboutMeMenu;
+  get contactMeMenu(): Menu {
+    return Menus.contactMeMenu;
   }
 
   get logInMenu() : Menu {
