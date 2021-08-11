@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Menu} from "../../shared/models/menu";
 import {Menus} from "../../shared/classes/menus";
 import {PersonalInfoService} from "../services/personal-info.service";
@@ -8,18 +8,12 @@ import {PersonalInfoService} from "../services/personal-info.service";
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
-
-  profileInformation: any;
+export class FooterComponent {
 
   constructor(private personalInfoService: PersonalInfoService) { }
 
-  ngOnInit(): void {
-    this.profileInformation = this.personalInfoService.getMyInformation();
-  }
-
   get personalProfile() {
-    return this.profileInformation;
+    return this.personalInfoService.profile;
   }
 
   get homeMenu() : Menu {

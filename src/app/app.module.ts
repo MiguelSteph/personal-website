@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {APP_INITIALIZER, NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +24,11 @@ import { ContactMeComponent } from './features/contact-me/contact-me.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AngularFireAnalyticsModule, ScreenTrackingService, UserTrackingService} from "@angular/fire/analytics";
+import {PersonalInfoService} from "./core/services/personal-info.service";
+
+export function initializeAppWithProfileInformation(personalInfoService: PersonalInfoService) {
+  return () => personalInfoService.getMyInformation();
+}
 
 @NgModule({
   declarations: [
@@ -55,7 +60,14 @@ import {AngularFireAnalyticsModule, ScreenTrackingService, UserTrackingService} 
   ],
   providers: [
     ScreenTrackingService,
-    UserTrackingService
+    UserTrackingService,
+    PersonalInfoService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeAppWithProfileInformation,
+      deps: [PersonalInfoService],
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
