@@ -23,6 +23,7 @@ import { BlogComponent } from './features/blogs/blog/blog.component';
 import { ContactMeComponent } from './features/contact-me/contact-me.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {AngularFireAnalyticsModule, ScreenTrackingService, UserTrackingService} from "@angular/fire/analytics";
 
 @NgModule({
   declarations: [
@@ -41,17 +42,21 @@ import {HttpClientModule} from "@angular/common/http";
     BlogComponent,
     ContactMeComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgbModule,
-        AngularFireModule.initializeApp(environment.firebase),
-        AngularFireDatabaseModule,
-        AngularFireAuthModule,
-        FormsModule,
-        HttpClientModule
-    ],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    AngularFireAnalyticsModule,
+    FormsModule,
+    HttpClientModule
+  ],
+  providers: [
+    ScreenTrackingService,
+    UserTrackingService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
