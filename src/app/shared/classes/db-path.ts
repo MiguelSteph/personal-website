@@ -4,4 +4,5 @@ export class DbPath {
   public static portfoliosPreviewInfoPath: string = "/portfolio-projects-preview-info";
   public static portfolioProjectsPath: string = "/porfolio-projects/";
   public static blogInfoPath: string = "/blog-posts/";
+  public static staticMailWebAppURL: string = "https://script.google.com/macros/s/AKfycbxwZZz8XG0_Ta0EByUW-htrOaKPeK1JXSfwFlIrf9q8OisQHPE/exec";
 }

@@ -21,6 +21,8 @@ import { PortfolioProjectPreviewComponent } from './features/portfolios/portfoli
 import { PortfolioProjectViewComponent } from './features/portfolios/portfolio-project-view/portfolio-project-view.component';
 import { BlogComponent } from './features/blogs/blog/blog.component';
 import { ContactMeComponent } from './features/contact-me/contact-me.component';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -39,14 +41,16 @@ import { ContactMeComponent } from './features/contact-me/contact-me.component';
     BlogComponent,
     ContactMeComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule,
+        FormsModule,
+        HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

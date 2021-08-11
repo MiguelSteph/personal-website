@@ -1,0 +1,168 @@
+
+
+.external-links-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.external-link {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+
+.external-link:hover {
+  opacity: 0.5;
+  filter: grayscale(20%);
+}
+
+.get-in-touch-text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contact-me-title {
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.3571428656578064px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+}
+
+.contact-me-form-wrapper {
+  margin-top: 2rem;
+}
+
+.get-in-touch-wrapper, .contact-me-form-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 100%;
+  row-gap: 1.5rem;
+
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(51, 50, 61, 0.2);
+  padding-top: 2rem;
+}
+
+.online-profiles {
+  margin-top: 2rem;
+}
+
+.send-msg-btn {
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+
+  padding: 0.7rem;
+
+  /*border-style: none;*/
+  border-radius: 10px;
+  border-color: rgba(51, 50, 61, 1);
+
+  background-color: #203A4C;
+}
+
+.project-view-demo-btn:hover {
+  background-color: #FFAD9B;
+  color: white;
+  border-color: #FFAD9B;
+}
+
+.send-msg-btn:disabled {
+  background-color: #6B7082;
+  border-color: #6B7082;
+}
+
+label {
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(51, 50, 61, 1);
+  padding-bottom: 8px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input {
+  height: 48px !important;
+}
+
+input, textarea {
+  font-family: "Public Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: rgba(51, 50, 61, 1);
+  background-color: rgba(51, 50, 61, 0.1);
+  border-radius: 10px;
+}
+
+.error-msg {
+  color: #dc3545!important;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+}
+
+
+/* Small devices: portrait tablets and large phones */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices: landscape tablets */
+@media only screen and (min-width: 768px) {
+  .get-in-touch-text {
+    font-size: 16px;
+  }
+
+  .contact-me-form-wrapper {
+    margin-top: 4rem;
+  }
+
+  .get-in-touch-wrapper, .contact-me-form-wrapper {
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 60%;
+  }
+}
+
+/* Large devices: laptops/desktops */
+@media only screen and (min-width: 992px) {
+  .contact-me-form-wrapper {
+    margin-top: 5rem;
+  }
+
+  .get-in-touch-wrapper, .contact-me-form-wrapper {
+    grid-template-columns: 30% 60%;
+  }
+}

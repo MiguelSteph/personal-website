@@ -1,1 +1,75 @@
-<p>contact-me works!</p>
+<div class="contact-wrapper">
+  <div class="get-in-touch-wrapper">
+    <div class="contact-me-title">Get in Touch</div>
+    <div class="get-in-touch-content">
+      <p class="get-in-touch-text">
+        I’d love to hear about what you’re working on and how I could help.
+        I am always happy to help in any way.
+        I’m open to a wide range of opportunities and the opportunity to
+        learn new skills and work with new technologies is particularly attractive to me.
+        I’m a hard-working and positive person who will always approach each task
+        with a sense of purpose and attention to detail.
+        Please do feel free to check out my online profiles below and get in touch using the form.
+      </p>
+      <div class="online-profiles">
+        <a href="{{personalProfile.linkedin}}" target="_blank">
+          <img class="external-link" src="assets/images/linkedin-icon-svg.svg" />
+        </a>
+        <a href="{{personalProfile.github}}" target="_blank">
+          <img class="external-link" src="assets/images/github-icon.svg" />
+        </a>
+        <a href="{{personalProfile.leetcode}}" target="_blank">
+          <img class="external-link" src="assets/images/LeetCode_logo.svg" />
+        </a>
+        <a href="{{personalProfile.hackerrank}}" target="_blank">
+          <img class="external-link" src="assets/images/hackerrank-logo.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-me-form-wrapper">
+    <div class="contact-me-title">Contact Me</div>
+    <div *ngIf="isSubmitted" class="thank-you-message get-in-touch-text">
+      Thank you for getting in touch. I will get back to you as soon as possible.
+    </div>
+    <form *ngIf="!isSubmitted" #f="ngForm" (ngSubmit)="sendMessage(f.value)" class="contact-me-form">
+      <div class="form-group">
+        <label for="fullName">Name</label>
+        <input required ngModel name="fullName" #fullName="ngModel"
+               type="text" class="form-control"
+               id="fullName" placeholder="Enter your name">
+        <small *ngIf="fullName.touched && !fullName.valid" id="nameErrorText"
+               class="error-msg form-text text-muted">
+          Please enter your name.
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="emailAddress">Email Address</label>
+        <input required email ngModel name="emailAddress" #emailAddress="ngModel"
+               type="text" class="form-control" id="emailAddress"
+               placeholder="email@example.com">
+        <small *ngIf="emailAddress.touched && !emailAddress.valid" id="emailErrorText"
+               class="error-msg form-text text-muted">
+          Please enter a valid email address
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="messageContent">Message</label>
+        <textarea required ngModel name="messageContent" #messageContent=ngModel
+                  class="form-control" id="messageContent" rows="3"
+                  placeholder="How can I help?"></textarea>
+        <small *ngIf="messageContent.touched && !messageContent.valid"
+               id="messageErrorText" class="error-msg form-text text-muted">
+          Please enter the message.
+        </small>
+      </div>
+      <div class="submit-btn">
+        <button [disabled]="!f.valid" class="send-msg-btn" type="submit">
+          SEND MESSAGE
+        </button>
+      </div>
+    </form>
+  </div>
+
+</div>
